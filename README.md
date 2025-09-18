@@ -1,5 +1,5 @@
 # Consistency in Sleepy Consensus using Markov Chains
-This repository contains the main scripts used to, derive and visualize Sleepy’s consistency conditions, estimate the finality threshold against the Balancing Attack, and run a lightweight simulator to empirically measure (in)consistency.
+This repository contains the main scripts used to derive and visualize Sleepy’s consistency conditions, estimate the finality threshold against the Balancing Attack, and run a lightweight simulator to empirically measure (in)consistency.
 
 ## Usage 
 `python -m venv .venv`  
@@ -54,5 +54,6 @@ The simulator accepts a large number of parameters as input to customise the exe
 
 example call: 
 `python -m dcsim.sleepy.sweep_consistency --N 100 --sigma 0.10 --delta 5 --k 3 --max-round 2000 --rounds-baseline 200 --reps 100 --c-min 0.5 --c-max 3 --c-steps 10 --rho-points 10 --rho-max 0.5 --delay-mode worst --cores 8 --outfile consistency_grid.csv`
+
 
 
